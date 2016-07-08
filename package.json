@@ -12,6 +12,7 @@
     "consolidate": "0.11.x",
     "cors": "2.5.x",
     "express": "3.20.x",
+        "bluemix-service-discovery" : "^0.1.1",
     "chai": "latest",
     "chai-as-promised": "latest",
     "colors": "latest",
