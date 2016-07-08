@@ -5,9 +5,10 @@ var bodyParser = require('body-parser');
 var cfenv = require("cfenv");
 var path = require('path');
 var cors = require('cors');
-var appEnv = cfenv.getAppEnv();
+var ServiceDiscovery = require('bluemix-service-discovery');
 
 //Setup Cloudant Service.
+var appEnv = cfenv.getAppEnv();
 cloudantService = appEnv.getService("myMicroservicesCloudant");
 
 //Setup middleware.
