@@ -38,7 +38,7 @@ discovery = new ServiceDiscovery({
 discovery.register(
   {
     service_name: appEnv.name,
-    ttl: 30, // 30s
+    ttl: 5, // ttl of 5s
     endpoint: {
       type: 'http',
       value: appEnv.url
@@ -57,7 +57,7 @@ discovery.register(
           console.log('HEARTBEAT ERROR');
         }
       });
-    }, 3000);
+    }, 1000); // renew every 1s
   }
 });
 
