@@ -6,5 +6,5 @@ applications:
 name: MicroservicesOrdersAPI
 path: .
 instances: 1
-memory: 96M
+memory: 128M
 
